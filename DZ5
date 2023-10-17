@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+from matplotlib.patches import Polygon
+
+# Определение вершин многоугольника
+polygon_coords = [(0, 0), (2, 0), (1, 2), (0, 2)]
+polygon = Polygon(polygon_coords, closed=True, facecolor='blue')
+
+# Создание графической фигуры и добавление многоугольника
+fig, ax = plt.subplots()
+ax.add_patch(polygon)
+
+# Установка пределов графика
+ax.set_xlim(0, 3)
+ax.set_ylim(0, 3)
+
+plt.xlabel('X-координаты')
+plt.ylabel('Y-координаты')
+plt.title('Закрашивание многоугольника')
+plt.grid(True)
+plt.show()
