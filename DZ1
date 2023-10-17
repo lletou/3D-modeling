@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+# Задаем координаты начальной и конечной точек линии
+x1, y1 = 0, 0
+x2, y2 = 5, 5
+
+# Создаем список точек для линии
+line_x = [x1, x2]
+line_y = [y1, y2]
+
+# Строим линию
+plt.plot(line_x, line_y)
+plt.xlabel('X-координаты')
+plt.ylabel('Y-координаты')
+plt.title('Построение линии')
+plt.grid(True)
+plt.show()
